@@ -1,0 +1,33 @@
+# AI Dataset Logic: Word Frequency Counter
+# This script simulates how an LLM identifies core topics in a text body.
+
+def calculate_frequency(text):
+    # Standardizing text to lowercase and removing simple punctuation
+    clean_text = text.lower().replace(".", "").replace(",", "")
+    words = clean_text.split()
+    
+    # Using a Dictionary to store word counts (Key-Value pairs)
+    frequency_map = {}
+    
+    for word in words:
+        if word in frequency_map:
+            frequency_map[word] += 1
+        else:
+            frequency_map[word] = 1
+            
+    # Sorting the results to see the "Most Important" words first
+    sorted_freq = sorted(frequency_map.items(), key=lambda x: x[1], reverse=True)
+    
+    print("--- Top Word Frequencies (AI Feature Extraction) ---")
+    for word, count in sorted_freq[:5]: # Show top 5
+        print(f"Token: {word} | Occurrences: {count}")
+
+# Imagine this is a small "dataset" for the AI to learn from
+dataset = """
+OpenAI is building safe AI. The residency at OpenAI is a great 
+opportunity to learn AI safety and AI development. Safety is 
+the priority at OpenAI.
+"""
+
+calculate_frequency(dataset)
+      
