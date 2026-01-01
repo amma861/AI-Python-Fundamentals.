@@ -1,12 +1,13 @@
-*AI & Python Fundamentals
-This repository documents my transition from **Java-based Backend Engineering** to **AI Development**. 
-
-### 🎯 Goal
-To master the computational logic required for Large Language Models (LLMs) and contribute to the **OpenAI Residency Program**.
-
-### 🛠 Tech Stack
-- **Languages:** Python (Primary for AI), Java (Core Logic)
-- **Focus:** Natural Language Processing (NLP), Algorithmic Efficiency, Data Structures.
-
-### 📁 Projects in this Repo
-1. **Semantic Text Analyzer (`nlp_basics.py`):** A script that demonstrates tokenization and basic sentiment scoring—key building blocks of how AI understands human language.
+AI & Python Fundamentals: The Transition
+Overview
+This repository documents my "High-Slope" transition from Core Java Engineering to AI Research & Python Development. My goal is to bridge the gap between deterministic software architecture and probabilistic AI modeling.
+Current Research Focus
+NLP Foundations: Exploring tokenization and semantic analysis from the ground up.
+Statistical Alignment: Using my background in statistics to ensure data integrity in AI pipelines.
+Low-Resource Languages: Researching how LLMs can be better aligned for West African languages (Igbo/Yoruba).
+Project Structure
+nlp_basics.py: A deep dive into text preprocessing and tokenization logic.
+data_to_sentiment.py: A statistical approach to sentiment analysis, moving from raw strings to weighted mathematical scores.
+Technical Stack
+Languages: Python (AI Focus), Java (Logic/Structure).
+Tools: Git, GitHub, Advanced Excel (Statistical Modeling).
